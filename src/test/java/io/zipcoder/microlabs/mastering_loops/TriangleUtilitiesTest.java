@@ -10,7 +10,7 @@ public class TriangleUtilitiesTest {
     public void getRow() {
         String expected = "********************";
         int width = 20;
-        String actual = TriangleUtilities.getRow(width);
+        String actual = String.valueOf(TriangleUtilities.getRow(width));
         Assert.assertEquals(expected, actual);
     }
 
@@ -54,7 +54,7 @@ public class TriangleUtilitiesTest {
                 "*******\n" +
                 "********\n" +
                 "*********\n";
-        String actual = TriangleUtilities.getLargeTriangle();
+        String actual = String.valueOf(TriangleUtilities.getLargeTriangle());
         Assert.assertEquals(expected, actual);
     }
 
@@ -66,7 +66,7 @@ public class TriangleUtilitiesTest {
                         "**\n" +
                         "***\n" +
                         "****\n";
-        String actual = TriangleUtilities.getSmallTriangle();
+        String actual = String.valueOf(TriangleUtilities.getSmallTriangle());
         Assert.assertEquals(expected, actual);
     }
 }
